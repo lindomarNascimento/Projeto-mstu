@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 5px auto;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #FF302b;
+    border: 1px solid #fff;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+
+.menu-btn {
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* border: 3px solid #eef442; */
+    margin: 0 5px;
+}
+
+.menu-btn-burguer {
+    width: 35px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn-burguer::before,
+.menu-btn-burguer::after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn-burguer::before {
+    transform: translateY(-10px);
+}
+
+.menu-btn-burguer::after {
+    transform: translateY(10px);
+}
+
+.menu-btn.open .menu-btn-burguer {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-btn.open .menu-btn-burguer::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn-burguer::after {
+    transform: rotate(-45deg) translate(35px, 35px)
+}
