@@ -8,6 +8,8 @@
 }
 
 .container {
+    display: flex;
+    justify-content: center;
     margin: 5px auto;
     box-sizing: border-box;
     padding: 10px;
@@ -23,6 +25,7 @@
 
 
 .menu-btn {
+    z-index: 1;
     position: absolute;
     left: 0;
     display: flex;
@@ -32,7 +35,6 @@
     height: 50px;
     cursor: pointer;
     transition: all .5s ease-in-out;
-    /* border: 3px solid #eef442; */
     margin: 0 5px;
 }
 
@@ -65,16 +67,85 @@
     transform: translateY(10px);
 }
 
+.menu-mobile {
+    left: 0px;
+    width: 80%;
+    padding: 10px;
+    position: absolute;
+    background: aliceblue;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    transition: 1.5s ease-out;
+    left: -80%;
+}
+
+.menu-nave-bar {
+    text-decoration: none;
+    text-align: inherit;
+    margin-top: 70px;
+
+}
+
+.menu-nave-bar li {
+    list-style: none;
+    padding: 20px 5px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.menu-nave-bar li:hover {
+    background-color: #88C0FF;
+    transition: 1s;
+}
+
+.menu-nave-bar a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animation */
+.click {
+    left: 64%;
+    transition: 1.5s ease-out;
+    transform: translateX(-80%);
+}
+
 .menu-btn.open .menu-btn-burguer {
     transform: translateX(-50px);
     background: transparent;
-    box-shadow: none;
+    box-shadow: black;
 }
 
 .menu-btn.open .menu-btn-burguer::before {
     transform: rotate(45deg) translate(35px, -35px);
+    background-color: rgb(255, 48, 43, 0.7);;
 }
 
 .menu-btn.open .menu-btn-burguer::after {
-    transform: rotate(-45deg) translate(35px, 35px)
+    transform: rotate(-45deg) translate(35px, 35px);
+    background-color: rgb(255, 48, 43, 0.7);
 }
+

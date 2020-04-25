@@ -59,7 +59,7 @@ const Login = () => {
         <>
             {window.onload = animationSquares}
 
-            <section>
+            <section className="form">
                 <div className="logo">
                 <h1>MSTU</h1>
                 </div>

@@ -10,7 +10,7 @@ body {
     overflow: hidden;
 }
 
-section{
+.form{
     display: flex;
     flex-direction: column;
     justify-content: center;
