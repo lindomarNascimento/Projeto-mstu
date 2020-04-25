@@ -30,8 +30,8 @@ const Main = () => {
                         <ul className="menu-nave-bar">
                             <a href="/main"><li><FontAwesomeIcon icon={faHome} fixedWidth/> HOME</li></a>
                             <a href="/keys"><li ><FontAwesomeIcon icon={faKey} fixedWidth/> GERAR CHAVES</li></a>
-                            <a href="/main"><li><FontAwesomeIcon icon={faMarker}/> MARCAR CHAMADA</li></a>
-                            <a href="/main"><li><FontAwesomeIcon icon={faUserCheck}/> CADASTRAR PESSOAS</li></a>        
+                            <a href="/present"><li><FontAwesomeIcon icon={faMarker}/> MARCAR CHAMADA</li></a>
+                            <a href="/person"><li><FontAwesomeIcon icon={faUserCheck}/> CADASTRAR PESSOAS</li></a>        
                         </ul>
                     </div>
             </section>

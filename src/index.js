@@ -10,6 +10,8 @@ ReactDOM.render(
       <Route path="/" exact component={App}/>
       <Route path="/main" component={Main} />
       <Route path="/keys" component={Main} />
+      <Route path="/present" component={Main} />
+      <Route path="/person" component={Main} />
     </Switch>
   </BrowserRouter>
   ,
